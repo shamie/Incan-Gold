@@ -1,3 +1,4 @@
+import random
 round_num = 5
 roster = []
 final_score = []
@@ -23,54 +24,22 @@ def end_game():
 		print "%r: %r" % (roster(i), score(i))
 
 # continue playing?
-for i in range (1, 5):
-	play_round()
-	round_num = round_num - 1
-else:
-	end_game()
+#for i in range (1, 5):
+#	play_round()
+#	round_num = round_num - 1
+#else:
+#	end_game()
 
 # actual game play
 # things i need to learn:
-# how to shuffle deck
 # how to add relic
 # how to flip top card of deck
-def play_round():
-	
-def treasure_card():
-	payout = value/current_players
-# create a system for points to be given to each 
-# player still in the game
-# and skip returned players
 
-def hazard_card():
-# if a new hazard, next card
-# if second hazard of the same type, round ends
+# deck shuffling 
+deck = ["one", "two", "three", "four", "five", "five", "seven", "seven", "nine", "eleven", "eleven", "thirteen", "fourteen", "fifteen", "seventeen", "goblin", "goblin", "goblin", "fire", "fire", "fire", "rocks", "rocks", "rocks", "snakes", "snakes", "snakes", "spiders", "spiders", "spiders"]
+print deck
 
-def relic_card():
-# if relic card 1-3, it is worth 5
-# if relic card 4-5, it is worth 10
-# while there is a relic card out
-# if more than one person returns, relic is destroyed
+random.shuffle(deck)
+print deck
 
-# hazards
-# goblins = 3
-# fire = 3
-# rocks = 3
-# snakes = 3
-# spiders = 3
-
-relics = 5
-
-# treasures
-# one = 1
-# two = 1
-# three = 1
-# four = 1 
-# five = 2
-# seven = 2
-# nine = 1
-# eleven = 2
-# thirteen = 1
-# fourteen = 1
-# fifteen = 1
-# seventeen = 1
+# def play_round():
